@@ -1,0 +1,149 @@
+body{
+    background-color: #fff;
+    margin: 0 auto;
+}
+h1{
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 25px;
+}
+p{
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: -15px;
+
+}
+#signature {
+    display: flex;
+    flex-direction: row; /* Altera para flex-direction: row para criar duas colunas */
+    width: 100%;
+    border: 1px solid #f3f3f3;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .div-img {
+    flex: 1; /* Ocupa uma proporção igual do espaço disponível */
+    border-right: 1px solid #000;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    flex: 1; /* Ocupa uma proporção igual do espaço disponível */
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Define o espaçamento entre os elementos <p> */
+    line-height: 0.2px;
+    margin-left: 10px;
+  }
+  
+  .name {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+a{
+    text-decoration: none;
+    color: black; 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .form_signature{
+    padding: 20px;
+}
+.logo{
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 10%;
+    padding: 15px;
+}
+.container label{
+    color: black;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+    flex-direction: column;
+
+}
+.container .input_form{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+input[type="text"], [type="tel"], [type="url"]{
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s, background-color 0.3s;
+    margin-top: 10px;
+}
+input[type="submit"]{
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px; /* Adiciona um espaçamento entre os botões */
+
+      }
+      
+      @media screen and (max-width: 600px) {
+        .button_submit {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+
+        input[type="text"], [type="tel"], [type="url"]{
+            width: 100%;
+            height: 20px;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: border-color 0.3s, background-color 0.3s;
+            margin-top: 10px;
+        }
+      }
+      .button_submit{
+        margin-top: 5px;
+        display: inline-block;
+
+      }
+input[type="file"]{
+
+    display: inline-block;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
