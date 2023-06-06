@@ -64,6 +64,7 @@ a{
     padding: 20px;
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
 }
 .logo{
     width: 100%;
